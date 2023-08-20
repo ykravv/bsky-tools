@@ -34,7 +34,7 @@ export async function action({ request }: ActionArgs) {
     );
   }
 
-  const user = await verifyLogin(handle, password);
+  const user: any = await verifyLogin(handle, password);
 
   if (!user) {
     return json(
