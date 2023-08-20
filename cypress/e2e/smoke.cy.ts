@@ -1,8 +1,4 @@
 describe("smoke tests", () => {
-  afterEach(() => {
-    cy.cleanupUser();
-  });
-
   it("should open login form", () => {
     cy.visitAndCheck("/");
 
